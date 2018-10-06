@@ -1,0 +1,54 @@
+.container-maincontent {
+  width: 100%;
+  height: auto;
+  flex: row;
+}
+
+.container-bodycontent {
+  width: 100%;
+  height: auto;
+}
+
+.container-adscontent {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  display: flex;
+}
+
+.card-ads-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 5px;
+}
+
+.card-info-box {
+  padding: 15px;
+  border-left: 5px solid cadetblue;
+  background-color: floralwhite;
+  word-wrap: break-word;
+}
+
+
+
+@media (max-width: 575.98px) {
+  .container-adscontent {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container-adscontent {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container-adscontent {
+    display: none;
+    visibility: hidden;
+  }
+}

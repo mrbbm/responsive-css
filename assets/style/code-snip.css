@@ -1,0 +1,350 @@
+.bbminfo_codesnip {
+  width: 100%;
+  background-color: #e1fbfd;
+  /* box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12); */
+  box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
+  border: 1px solid #cccccc;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.bbminfo_codesnipIn {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px;
+}
+
+.bbminfo_codesnipIn p {
+  font-size: 16px;
+}
+
+code {
+  color: black;
+}
+
+.code-toolbar {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 16px 0 0;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.item-spacer {
+  flex: 1 auto;
+}
+
+/* .code-toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+} */
+
+
+
+/* .bbminfo_codesnipIn p {
+  font-family: monospace;
+  background-color: #fff;
+  width: auto;
+  margin: 4em auto;
+  line-height: 0;
+  counter-reset: snippetLineCounter;
+}
+
+p code {
+  display: block;
+  white-space: pre-wrap
+}
+
+code:before {
+  counter-increment: snippetLineCounter;
+  content: counter(snippetLineCounter);
+  border-right: 1px solid #ddd;
+  padding: 0 .5em;
+  margin-right: .5em;
+  color: #888;
+}
+
+code:after {
+  display: block;
+  white-space: pre-wrap;
+} */
+
+.sinppet-header {
+  font-size: 15px;
+}
+
+.bbminfo_codesnipIn p {
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+}
+
+.bbminfo_codesnipIn ol {
+  list-style: none;
+  counter-reset: item;
+  margin: 0px;
+  padding: 0px;
+}
+.bbminfo_codesnipIn ol li {
+  counter-increment: item;
+}
+
+.code-snip-line {
+  list-style-position: inside;
+    text-indent: -3em;
+    padding-left: 5em;
+}
+
+.code-developer-icon {
+  text-align: right;
+  cursor: pointer;
+}
+
+.code-snip-line:before {
+  content: counter(item);
+  border-right: 1px solid #ddd;
+  padding: 0 0 0 1em;
+  margin-right: 1em;
+  color: #888;
+  text-align: center;
+  display: inline-block;
+  cursor: default;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.code-snip-noline:before {
+  content: '';
+  padding: calc(0 .5em + 5px);
+  margin-right: .5em;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  cursor: default;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+@media (max-width: 575.98px) {
+  .code-snip-line:before {
+    content: '';
+    border-right: 0px solid #ddd;
+    padding: 0px;
+    margin-right: 0px;
+    color: #fff;
+  }
+
+  .code-snip-line {
+    list-style-position: inside;
+    text-indent: 0em;
+    padding-left: 0em;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .code-snip-line:before {
+    content: '';
+    border-right: 0px solid #ddd;
+    padding: 0px;
+    margin-right: 0px;
+    color: #fff;
+  }
+
+  .code-snip-line {
+    list-style-position: inside;
+    text-indent: 0em;
+    padding-left: 0em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .code-snip-line:before {
+    content: '';
+    border-right: 0px solid #ddd;
+    padding: 0px;
+    margin-right: 0px;
+    color: #fff;
+  }
+
+  .code-snip-line {
+    list-style-position: inside;
+    text-indent: 0em;
+    padding-left: 0em;
+  }
+}
+
+.bbminfo_phpVariable {
+  color: #b3005d;
+}
+
+.bbminfo_phpvarType {
+  color: #00a5a5;
+}
+
+.bbminfo_phpConstant {
+  color: #660000;
+}
+
+.bbminfo_phpKeyword {
+  color: #003399;
+}
+
+.bbminfo_phpReservedword {
+  color: #ff0000;
+}
+
+.bbminfo_phpString {
+  color: #cc0000;
+}
+
+.bbminfo_phpComment,
+.bbminfo_htmlForm {
+  color: #ff9900;
+}
+
+.bbminfo_phpStruct {
+  color: #009a3d;
+}
+
+.bbminfo_htmlNtags {
+  color: #0000ff;
+}
+
+.bbminfo_htmltags,
+a code {
+  color: #0d14b8;
+}
+
+.bbminfo_rKeyword {
+  color: rgb(33, 122, 192);
+}
+.bbminfo_htmlImg,
+.bbminfo_sKeyword {
+  color: #b3008a;
+}
+.bbminfo_htmlAnc {
+  color: #009900;
+}
+.bbminfo_htmlTab {
+  color: #00a4a4;
+}
+
+.bbminfo_scriptTag {
+  color: #990000;
+}
+.bbminfo_htmlCssPink {
+  color: #ff00ff;
+}
+
+.bbminfo_scriptVK {
+  color: #0d14b8;
+  font-weight: bold;
+}
+.bbminfo_scriptNum {
+  color: #ff0000;
+}
+.bbminfo_htmlComment {
+  color: #a2a2a2;
+}
+.codeEdit_Cursor {
+  cursor: pointer;
+}
+
+.bbminfo_proColor {
+  background-color: #e5f6fb;
+}
+
+.bbminfo_proBold {
+  font-weight: bold;
+}
+
+.padingZero {
+  padding: 0px;
+}
+
+.bbminfoproFld1Line1 h4,
+.bbminfoproFld2Line1 h4 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.bbminfoproBorderLeft {
+  border-left: 1px solid #cccccc;
+}
+
+.bbminfoproBorderRight {
+  border-right: 1px solid #cccccc;
+}
+
+.bbminfo_Required {
+  color: #ff0000;
+  font-size: 10px;
+}
+.bbminfo_New {
+  color: #ff9900;
+  font-size: 10px;
+}
+
+.bbminfo_htmlP10 {
+  padding-left: 10px;
+}
+
+.bbminfo_htmlP20 {
+  padding-left: 20px;
+}
+
+.bbminfo_htmlP30 {
+  padding-left: 30px;
+}
+
+.bbminfo_htmlP40 {
+  padding-left: 40px;
+}
+
+.bbminfo_htmlP50 {
+  padding-left: 50px;
+}
+
+.bbminfo_imgAlign {
+  vertical-align: text-top;
+}
+
+.bbminfo_MultiText_FunctionTester {
+  width: 97%;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  resize: none;
+}
+
+.bbminfo_Text_FunctionTester {
+  width: 97%;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+}
+.margin_left_60 {
+  margin-left: 60px;
+}
+
+/* custom styles */
+.tIndent {
+  text-indent: 20px;
+}
+.redText {
+  color: #ff0000;
+}

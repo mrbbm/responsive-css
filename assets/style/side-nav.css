@@ -1,0 +1,82 @@
+.content-sidebar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  border-right: 1px solid darkgray;
+}
+
+.active-route {
+  background-color: burlywood;
+}
+
+.nav-sidebar {
+  border-bottom: 1px solid #ccc;
+  background: linear-gradient(#fefefd, #fafafa 3%, #fdfdfd);
+  flex: 1;
+  flex-grow: inherit;
+}
+
+.nav-sidebar .header-sidebar {
+  padding: 10px 10px 5px 10px;
+  border-bottom: 1px dashed darkgray;
+  background: linear-gradient(#fefefd, #f9f9f9 3%, #e5e5e5);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.nav-sidebar ul {
+  list-style-type: none;
+  margin: 0 0 5px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav-sidebar ul li {
+  font-size: 13px;
+  line-height: 16px;
+  margin: 0;
+  padding: 10px 15px 10px 20px;
+  border-bottom: 1px dashed #ccc;
+}
+
+.nav-sidebar ul li:last-child {
+  border-bottom: 0px;
+}
+
+.nav-sidebar ul li a {
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+  margin: 0px 5px 0px 0px;
+  padding-left: 15px;
+  color: #000;
+  background: url(../../assets/img/bullet.png) no-repeat left;
+}
+
+.nav-sidebar ul li a:hover {
+  color: #f26522;
+  font-weight: bold;
+}
+
+.anchor-Title {
+  color: #00aad2;
+}
+
+@media (max-width: 320px) {
+  .content-sidebar {
+    border-right: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-sidebar {
+    border-right: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .content-sidebar {
+    border-right: none;
+  }
+}

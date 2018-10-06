@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Python</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Mono:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <script src="./assets/scripts/bquery.js"></script>
+    <link rel="stylesheet" href="./assets/style/template.css">
+    <link rel="stylesheet" href="./assets/style/header.css">
+    <link rel="stylesheet" href="./assets/style/side-nav.css">
+    <link rel="stylesheet" href="./assets/style/main.css">
+    <link rel="stylesheet" href="./assets/style/code-snip.css">
+    <link rel="stylesheet" href="./assets/style/footer.css">
+    <link rel="stylesheet" href="./assets/style/common.css">
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header-container">
+                <img src="./assets/img/bbminfo.png" alt="Angular" height="75px" width="auto" />
+                <span class="header-spacer"></span>
+                <mat-icon class="header-icon">verified_user</mat-icon>
+            </div>
+        </header>
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark text-white bg-secondary sticky-top">
+            <a class="navbar-brand" href="#"><i class="material-icons">
+                    home
+                </i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+
+
+
+        <!-- <nav class="navbar navbar-expand-sm bg-dark text-white navbar-dark sticky-top SiteHeaderBar">
+
+            <a class="navbar-brand" href="#"><i class="material-icons">
+                    home
+                </i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a rel="index" class="nav-link" href="/" type="text/html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a type="text/html" class="nav-link" href="/users">User</a>
+                    </li>
+                    <li class="nav-item">
+                        <a type="text/html" class="nav-link" href="/userdata">PDF Data</a>
+                    </li>
+                </ul>
+            </div>
+        </nav> -->
+        <div class="container-main">
+            <div class="container-sidebar">
+                <div class="content-sidebar">
+                    <nav class="nav-sidebar">
+                        <div class="header-sidebar">Header</div>
+                        <ul>
+                            <li>
+                                <a href="/users">Users</a>
+                            </li>
+                            <li>
+                                <a href="/userdata">PDF Data</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="nav-sidebar">
+                        <div class="header-sidebar" data-toggle="collapse" data-target="#side-nav-01" aria-expanded="true">Header</div>
+                        <ul id="side-nav-01">
+                            <li>
+                                <a href="/users">Users</a>
+                            </li>
+                            <li>
+                                <a href="/userdata">PDF Data</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="container-maincontent">
+                <div class="container-bodycontent container-fluid">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Library</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Data</li>
+                        </ol>
+                    </nav>
+                    <div class="card">
+                        <div class="card-ads-body">
+                            Ads Scence
+                        </div>
+                    </div>
+                    <div class="card margin-top25">
+                        <div class="card-header">
+                            <h1 class="font20">
+                                <span class="hlTitle">PHP</span> Mail - mail()
+                            </h1>
+                        </div>
+                        <div class="card-body">
+                            <div class="card card-info-box">
+                                <h2 class="card-title">Description &amp; Uses of <span class="hlTitle">PHP</span>
+                                    mail()</h2>
+                                <p>
+                                    The <span class="hlTitleBold">PHP</span> mail() function is used to send emails
+                                    directly from the PHP scripts.
+                                </p>
+                            </div>
+                            <section class="margin-topBot25">
+                                <h3 class="sinppet-header">Simple Example - <span class="hlTitle">PHP</span> <code><span class="bbminfo_phpKeyword" title="The PHP mail() function is used to send an eMail from PHP Script">mail</span>(<span class="bbminfo_phpvarType">String</span> <span class="bbminfo_phpString" title="Specifies the To Address of an eMail"><var>$to</var></span>, <span class="bbminfo_phpvarType">String</span> <span class="bbminfo_phpString" title="Specifies the Subject of an eMail"><var>$subject</var></span>, <span class="bbminfo_phpvarType">String</span> <span class="bbminfo_phpString" title="Specifies the Body of an eMail"><var>$message</var></span>, <span class="bbminfo_phpvarType">String</span> <span class="bbminfo_phpString" title="Additional Header Information"><var>$header</var></span>);</code></h3>
+                                <div class="bbminfo_codesnip margin-bot25">
+                                    <div class="flex-box"><h4 class="flex-item">PHP Input Screen</h4> <i class="material-icons flex-item code-developer-icon" title="Plain code" onclick="toggleSnipet('selectable1')">developer_mode</i></div>
+                                    <div class="bbminfo_codesnipIn">
+                                        <ol id="selectable1">
+                                            <li class="code-snip-line"><code title="Opening PHP Tag"><span class="bbminfo_phpReservedword">&lt;?php</span></code></li>
+                                            <li class="code-snip-line"><code><span class="bbminfo_phpKeyword bbminfo_htmlP10" title="The PHP mail() function is used to send an eMail from PHP Script">mail</span>(<span class="bbminfo_phpString" title="Specifies the To Address of an eMail"><var>&quot;info@bbminfo.com&quot;</var></span>, <span class="bbminfo_phpString" title="Specifies the Subject of an eMail"><var>&quot;Test Mail&quot;</var></span>, <span class="bbminfo_phpString" title="Specifies the Body of an eMail"><var>&quot;Hai Buddy! How are you?&quot;</var></span>);</code></li>
+                                            <li class="code-snip-line"><code title="Closing PHP Tag"><span class="bbminfo_phpReservedword">?></span></code></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="card">
+                                    <div class="card-ads-body">
+                                        Ads Scence
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="margin-topBot25">
+                                <h3 class="sinppet-header">Simple <span class="hlTitle">PHP</span> Syntax</h3>
+                                <div class="bbminfo_codesnip">
+                                    <div class="bbminfo_codesnipIn">
+                                        <ol id="selectable2">
+                                            <li class="code-snip-line"><code title="Opening PHP Tag"><span class="bbminfo_phpReservedword">&lt;?php</span></code></li>
+                                            <li class="code-snip-line"><code><span class="bbminfo_phpKeyword" title="The PHP mail() function is used to send an eMail from PHP Script">mail</span>(<span class="bbminfo_phpvarType">String</span> <span class="bbminfo_phpString" title="Specifies the To Address of an eMail"><var>$to</var></span>, <span class="bbminfo_phpvarType">String</span> <span class="bbminfo_phpString" title="Specifies the Subject of an eMail"><var>$subject</var></span>, <span class="bbminfo_phpvarType">String</span> <span class="bbminfo_phpString" title="Specifies the Body of an eMail"><var>$message</var></span>, <span class="bbminfo_phpvarType">String</span> <span class="bbminfo_phpString" title="Additional Header Information"><var>$header</var></span>);</code></li>
+                                            <li class="code-snip-line"><code title="Closing PHP Tag"><span class="bbminfo_phpReservedword">?></span></code></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="margin-bot25">
+                                <h3 class="sinppet-header">Parameter & Return Type</h3>
+                                <table class="table table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <td><code><span class="bbminfo_phpvarType" title="Characters to be escaped">String</span><span class="bbminfo_phpString" title="Specifies the string to print"> <var>$to</var></span></code></td>
+                                            <td>Specifies the To Address. <span class="bbminfo_Required">(*Required)</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code><span class="bbminfo_phpvarType" title="Characters to be escaped">String</span><span class="bbminfo_phpString" title="Specifies the string to print"> <var>$subject</var></span></code></td>
+                                            <td>Specifies the To Subject. <span class="bbminfo_Required">(*Required)</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code><span class="bbminfo_phpvarType" title="Characters to be escaped">String</span><span class="bbminfo_phpString" title="Specifies the string to print"> <var>$message</var></span></code></td>
+                                            <td>Specifies the Body of an eMail. <span class="bbminfo_Required">(*Required)</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code><span class="bbminfo_phpvarType" title="Characters to be escaped">String</span><span class="bbminfo_phpString" title="Specifies the string to print"> <var>$header</var></span></code></td>
+                                            <td>Specifies the headers like <strong>From:</strong>, <strong>Cc:</strong>,
+                                                <strong>Bcc:</strong> and <strong>Date:</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+                            <section>
+                                <div class="card">
+                                    <div class="card-ads-body">
+                                        Ads Scence
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="margin-top35">
+                                <h3 class="caption-header">What is <span class="hlTitle">PHP</span> mail() ?</h3>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">It's used to send an Instant Electronic Mail through
+                                        PHP
+                                        Script</li>
+                                    <li class="list-group-item">It returns <code>TRUE</code> if Success otherwise <code>FALSE</code>.</li>
+                                    <li class="list-group-item">Header Information atleast contain &quot;From:&quot;
+                                        part
+                                        and the additional informations like Carbon Copy (<code>Cc:</code>), Blind
+                                        Carbon Copy
+                                        (<code>BCC</code>), <code>Date</code>, if neccessary.</li>
+                                    <li class="list-group-item"><span class="caption-title">It is available in Three
+                                            flavors</span>
+                                        <ul>
+                                            <li class="bbm_bullets">Simple Plain Text eMail</li>
+                                            <li class="bbm_bullets">HTML embeded eMail</li>
+                                            <li class="bbm_bullets">eMail with Attachment</li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item"><span class="caption-title">Simple Plain Text eMail:</span>
+                                        <ul>
+                                            <li class="bbm_bullets">No HTML Tags are rendered</li>
+                                            <li class="bbm_bullets">The default Content-Type for Plain mail() is <code>"text/plain;
+                                                charset=us-ascii"</code></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item"><span class="caption-title">HTML embeded eMail:</span>
+                                        <ul>
+                                            <li class="bbm_bullets">HTML Tags are rendered</li>
+                                            <li class="bbm_bullets">Inline Style Sheet must be used</li>
+                                            <li class="bbm_bullets">No <code>&lt;html&gt;, &lt;/html&gt;, &lt;head&gt;, &lt;/head&gt;,
+                                                &lt;title&gt;, &lt;/title&gt; &lt;doctype&gt;</code> are used for best
+                                                practice.</li>
+                                            <li class="bbm_bullets">No .css Files are used</li>
+                                            <li class="bbm_bullets">No .js Files are used.</li>
+                                            <li class="bbm_bullets">The default Content-Type for HTML mail() is <code>"text/html;
+                                                charset=ISO-8859-1"</code></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item"><span class="caption-title">eMail with an Attachment:</span>
+                                        <ul>
+                                            <li class="bbm_bullets">Attachment can be sent either Plain or HTML eMail</li>
+                                            <li class="bbm_bullets">No external Reference files can be sent.(Ex: <a
+                                                    href="http://www.bbminfo.com/YGen.pdf" target="_blank">https://www.bbminfo.com/YGen.pdf</a>)</li>
+                                            <li class="bbm_bullets">Maximum File Size of an Attachment is <strong>5 MB</strong></li>
+                                            <li class="bbm_bullets">The default Content-Types are
+                                                <ol>
+                                                    <li>The default Content-Type of a text message is
+                                                        <code>&quot;multipart/mixed&quot;</code></li>
+                                                    <li>The default Content-Type of an attachment file is
+                                                        <code>&quot;application/octet-stream&quot;</code></li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item"></li>
+                                </ul>
+                            </section>
+                            <section>
+                                <div class="card">
+                                    <div class="card-ads-body">
+                                        Ads Scence
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="margin-topBot25">
+                                <h3 class="sinppet-header">Example #5 - <span class="hlTitle">PHP</span> <code><span class="bbminfo_phpKeyword"  data-toggle="tooltip" title="The PHP mail() function is used to send an eMail from PHP Script">mail</span>(<span class="bbminfo_phpvarType">String</span> <span class="bbminfo_phpString"  data-toggle="tooltip" title="Specifies the To Address of an eMail"><var>$to</var></span>, <span class="bbminfo_phpvarType">String</span> <span class="bbminfo_phpString" data-toggle="tooltip" title="Specifies the Subject of an eMail"><var>$subject</var></span>, <span class="bbminfo_phpvarType">String</span> <span class="bbminfo_phpString"  data-toggle="tooltip" title="Specifies the Body of an eMail"><var>$message</var></span>, <span class="bbminfo_phpvarType">String</span> <span class="bbminfo_phpString"  data-toggle="tooltip" title="Additional Header Information"><var>$header</var></span>);</code></h3>
+                                <div class="bbminfo_codesnip margin-bot25">
+                                    <h4>PHP Input Screen</h4>
+                                    <div class="bbminfo_codesnipIn margin-bot25">
+                                        <ol id="selectable2">
+                                            <li class="code-snip-line"><code data-toggle="tooltip" title="Opening PHP Tag"><span class="bbminfo_phpReservedword">&lt;?php</span></code></li>
+                                            <li class="code-snip-line"></li>
+                                            <li class="code-snip-line"><code><span class="bbminfo_phpComment"  data-toggle="tooltip" title="PHP Comment">/* Simple HTML eMail with PDF Attachment  */</span></code></li>
+                                            <li class="code-snip-line"><code><var>$from</var> = <span class="bbminfo_phpString"  data-toggle="tooltip" title="Assigns a String to a Variable">"support@bbminfo.com"</span>;</code></li>
+                                            <li class="code-snip-line"><code><var>$to</var> = <span class="bbminfo_phpString"  data-toggle="tooltip" title="Assigns a String to a Variable">"info@pugalidam.com"</span>;</code></li>
+                                            <li class="code-snip-line"><code><var>$subject</var> = <span class="bbminfo_phpString"  data-toggle="tooltip" title="Assigns a String to a Variable">"Invitation for New YGen SEO Tool"</span>;</code></li>
+                                            <li class="code-snip-line"><code><var>$html_message</var> = <span class="bbminfo_phpString"  data-toggle="tooltip" title="Assigns a String to a Variable">"&lt;div style=\"width:600px; margin:auto;\"&gt;&lt;p&gt;&lt;strong&gt;Dear User&lt;/strong&gt;,&lt;br&gt;We are very glad to inform and invite you, that &lt;span style=\"color:#00aad2; font-weight: bold;\"&gt;BBM's YGen&lt;/span&gt; SEO Tool  (&lt;a href=\"https://www.bbminfo.com\"&gt;bbminfo.com&lt;/a&gt;) is now ready to launch on 15th August, 2013.&lt;p&gt;&lt;div&gt;"</span>;</code></li>
+                                            <li class="code-snip-line"></li>
+                                            <li class="code-snip-line"><code><span class="bbminfo_phpComment"  data-toggle="tooltip" title="PHP Comment">/* Attachment File Information (PDF) */</span></code></li>
+                                            <li class="code-snip-line"><code><var>$file_path</var> = <span class="bbminfo_phpString"  data-toggle="tooltip" title="Assigns an Attachment File Path (Physical Location)">"YGen.pdf"</span>;</code></li>
+                                            <li class="code-snip-line"></li>
+                                            <li class="code-snip-line"><code><span class="bbminfo_phpComment"  data-toggle="tooltip" title="PHP Comment">/* Header Information */</span></code></li>
+                                            <li class="code-snip-line"><code><var>$header</var> = <span class="bbminfo_phpString"  data-toggle="tooltip" title="Assigns a String to a Variable">"From: "</span> . <span class="bbminfo_phpKeyword"  data-toggle="tooltip" title="The PHP strip_tags() function is used to remove HTML and XML Tags form the given string.">strip_tags</span>(<var  data-toggle="tooltip" title="The string to be Clean from Tags">$from</var>);</code></li>
+                                            <li class="code-snip-line"></li>
+                                            <li class="code-snip-line"><code><span class="bbminfo_phpComment"  data-toggle="tooltip" title="PHP Comment">/* Boundary Information */</span></code></li>
+                                            <li class="code-snip-line"></li>
+                                            <li class="code-snip-line"><code>$semi_rand = <span class="bbminfo_phpKeyword"  data-toggle="tooltip" title="The PHP md5() function - Gives the Hash Value of a Given String">md5</span>(<span class="bbminfo_phpKeyword"  data-toggle="tooltip" title="The PHP time() function returns the Time">time</span>());</code></li>
+                                            <li class="code-snip-line"><code><var>$mime_boundary</var> = <span class="bbminfo_phpString"  data-toggle="tooltip" title="Assigns an Attachment Message (Required)">"==Multipart_Boundary_x{$semi_rand}x"</span>;</code></li>
+                                            <li class="code-snip-line"></li>
+                                            <li class="code-snip-line"><code><span class="bbminfo_phpComment"  data-toggle="tooltip" title="PHP Comment">/* Header Information */</span></code></li>
+                                            <li class="code-snip-line"></li>
+                                            <li class="code-snip-line"><code><var>$header</var> .= <span class="bbminfo_phpString"  data-toggle="tooltip" title="Assigns a String to a Variable">"\nMIME-Version: 1.0\n"</span>;</code></li>
+                                            <li class="code-snip-line"><code><var>$header</var> .= <span class="bbminfo_phpString"  data-toggle="tooltip" title="Assigns a String to a Variable">"Content-Type: multipart/mixed;\n"</span>;</code></li>
+                                            <li class="code-snip-line"><code><var>$header</var> .= <span class="bbminfo_phpString"  data-toggle="tooltip" title="Assigns a String to a Variable">" boundary=\"{$mime_boundary}\""</span>;</code></li>
+                                            <li class="code-snip-line"></li>
+                                            <li class="code-snip-line"><code><span class="bbminfo_phpComment"  data-toggle="tooltip" title="PHP Comment">/* Inner Operation for Message Attachment */</span></code></li>
+                                            <li class="code-snip-line"></li>
+                                            <li class="code-snip-line"><code><var>$msg_attachment</var> = <span class="bbminfo_phpString"  data-toggle="tooltip" title="Assigns an Attachment Message (Required)">"This is a multi-part message in MIME format.\n\n"</span>;</code></li>
+                                            <li class="code-snip-line"><code><var>$msg_attachment</var> .= <span class="bbminfo_phpString"  data-toggle="tooltip" title="Assigns an Attachment Message (Required)">"--{$mime_boundary}\n"</span>;</code></li>
+                                            <li class="code-snip-line"><code><var>$msg_attachment</var> .= <span class="bbminfo_phpString"  data-toggle="tooltip" title="Assigns an Attachment Message (Required)">"Content-Type: text/html; charset=\"iso-8859-1\"\n"</span>;</code></li>
+                                            <li class="code-snip-line"><code><var>$msg_attachment</var> .= <span class="bbminfo_phpString"  data-toggle="tooltip" title="Assigns an Attachment Message (Required)">"Content-Transfer-Encoding: 7bit\n\n"</span> . <var>$html_message</var> . <span class="bbminfo_phpString"  data-toggle="tooltip" title="Assigns an Attachment Message (Required)">"\n\n"</span>;</code></li>
+                                            <li class="code-snip-line"><code><var>$msg_attachment</var> .= <span class="bbminfo_phpString"  data-toggle="tooltip" title="Assigns an Attachment Message (Required)">"--{$mime_boundary}\n"</span>;</code></li>
+                                            <li class="code-snip-line"></li>
+                                            <li class="code-snip-line"><code><span class="bbminfo_phpComment"  data-toggle="tooltip" title="PHP Comment">/* Inner Operation for File Attachment */</span></code></li>
+                                            <li class="code-snip-line"></li>
+                                            <li class="code-snip-line"><code>$file = <span class="bbminfo_phpKeyword"  data-toggle="tooltip" title="The PHP fopen() function - Opens a File in a Specified mode">fopen</span>(<var  data-toggle="tooltip" title="The File Path of the specified File to be Open">$file_path</var>, <span class="bbminfo_phpString"  data-toggle="tooltip" title="File Opening in Binary Mode (Non Text)">"rb"</span>);</code></li>
+                                            <li class="code-snip-line"><code>$data = <span class="bbminfo_phpKeyword"  data-toggle="tooltip" title="The PHP fread() function - reads a File via File Handler">fread</span>(<var  data-toggle="tooltip" title="The File Path of the specified File to be Open">$file</var>, <span class="bbminfo_phpKeyword"  data-toggle="tooltip" title="The PHP filesize() function returns the Size of the specified file in Bytes.">filesize</span>(<var  data-toggle="tooltip" title="The File Path of the specified File to get the File Size">$file_path</var>));</code></li>
+                                            <li class="code-snip-line"><code><span class="bbminfo_phpKeyword"  data-toggle="tooltip" title="The PHP fclose() function - Closes the File Handler">fclose</span>(<var  data-toggle="tooltip" title="The File Handler to Close">$file</var>);</code></li>
+                                            <li class="code-snip-line"></li>
+                                            <li class="code-snip-line"><code>$data = <span class="bbminfo_phpKeyword"  data-toggle="tooltip" title="The PHP chunk_split() function will splits a sting into more than one smaller parts.">chunk_split</span>(<span class="bbminfo_phpKeyword"  data-toggle="tooltip" title="The PHP base64_encode() function Encodes data with MIME base64.">base64_encode</span>(<var  data-toggle="tooltip" title="The File Path of the specified File to get the File Size">$data</var>));</code></li>
+                                            <li class="code-snip-line"></li>
+                                            <li class="code-snip-line"><code><var>$file_attachment</var> = <span class="bbminfo_phpString"  data-toggle="tooltip" title="Assigns an Attachment Message (Required)">"Content-Type: {\"application/octet-stream\"};\n"</span>;</code></li>
+                                            <li class="code-snip-line"><code><var>$file_attachment</var> .= <span class="bbminfo_phpString"  data-toggle="tooltip" title="Assigns an Attachment Message (Required)">" name=\"$file_path\"\n"</span>;</code></li>
+                                            <li class="code-snip-line"><code><var>$file_attachment</var> .= <span class="bbminfo_phpString"  data-toggle="tooltip" title="Assigns an Attachment Message (Required)">"Content-Disposition: attachment;\n"</span>;</code></li>
+                                            <li class="code-snip-line"></li>
+                                            <li class="code-snip-line"><code><var>$file_attachment</var> .= <span class="bbminfo_phpString"  data-toggle="tooltip" title="Assigns an Attachment Message (Required)">"</span><span class="bbminfo_phpString"  data-toggle="tooltip" title="Assigns an Attachment Message (Required)"> filename=\"$file_path\"\n"</span>;</code></li>
+                                            <li class="code-snip-line"></li>
+                                            <li class="code-snip-line"><code><var>$file_attachment</var> .= <span class="bbminfo_phpString"  data-toggle="tooltip" title="Assigns an Attachment Message (Required)">"Content-Transfer-Encoding: base64\n\n"</span> . <var>$data</var> . <span class="bbminfo_phpString"  data-toggle="tooltip" title="Assigns an Attachment Message (Required)">"\n\n"</span>;</code></li>
+                                            <li class="code-snip-line"><code><var>$file_attachment</var> .= <span class="bbminfo_phpString"  data-toggle="tooltip" title="Assigns an Attachment Message (Required)">"--{$mime_boundary}\n"</span>;</code></li>
+                                            <li class="code-snip-line"></li>
+                                            <li class="code-snip-line"><code><var>$message</var> = <var>$msg_attachment</var> . <var>$file_attachment</var>;</code></li>
+                                            <li class="code-snip-line"></li>
+                                            <li class="code-snip-line"><code><span class="bbminfo_phpComment"  data-toggle="tooltip" title="PHP Comment">/* Triggering Mail Function (Sending Mail with an Image) */</span></code></li>
+                                            <li class="code-snip-line"></li>
+                                            <li class="code-snip-line"><code><var>$flg</var> = <span class="bbminfo_phpKeyword"  data-toggle="tooltip" title="The PHP mail() function is used to send an eMail from PHP Script">mail</span>(<span class="bbminfo_phpString"  data-toggle="tooltip" title="Specifies the To Address of an eMail"><var>$to</var></span>, <span class="bbminfo_phpString"  data-toggle="tooltip" title="Specifies the Subject of an eMail"><var>$subject</var></span>, <span class="bbminfo_phpString"  data-toggle="tooltip" title="Specifies the Body of an eMail"><var>$message</var></span>, <span class="bbminfo_phpString"  data-toggle="tooltip" title="Additional Header Information"><var>$header</var></span>);</code></li>
+                                            <li class="code-snip-line"></li>
+                                            <li class="code-snip-line"><code><span class="bbminfo_phpvarType"  data-toggle="tooltip" title="Logical Conditional Checker">if</span>($flg <span class="bbminfo_phpKeyword">==</span> <span class="bbminfo_phpvarType">true</span>) {</code></li>
+                                            <li class="code-snip-line"></li>
+                                            <li class="code-snip-line"><code><span class="bbminfo_phpKeyword bbminfo_htmlP10"  data-toggle="tooltip" title="echo() – Outputs String">echo</span>(<var><span class="bbminfo_phpString"  data-toggle="tooltip" title="Specifies the string to print">"Your message has been sent."</span></var>);</code></li>
+                                            <li class="code-snip-line"></li>
+                                            <li class="code-snip-line"><code>} <span class="bbminfo_phpvarType">else</span> {</code></li>
+                                            <li class="code-snip-line"><code><span class="bbminfo_phpKeyword bbminfo_htmlP10"  data-toggle="tooltip" title="echo() – Outputs String">echo</span>(<var><span class="bbminfo_phpString"  data-toggle="tooltip" title="Specifies the string to print">"Failed to sent."</span></var>);</code></li>
+                                            <li class="code-snip-line"><code>} </code></li>
+                                            <li class="code-snip-line"></li>
+                                            <li class="code-snip-line"><code data-toggle="tooltip" title="Closing PHP Tag"><span class="bbminfo_phpReservedword">?&gt;</span></code></li>
+                                        </ol>
+                                    </div>
+                                    <h4>PHP Output Screen</h4>
+                                    <div class="bbminfo_codesnipIn">
+                                        <p><samp>Your message has been sent.</samp></p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="card">
+                                    <div class="card-ads-body">
+                                        Ads Scence
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-adscontent">
+                    <section class="margin-bot25">
+                        <div class="card">
+                            <div class="card-ads-body">
+                                Ads Scence
+                            </div>
+                        </div>
+                    </section>
+                    <section class="margin-bot25">
+                        <div class="card">
+                            <div class="card-ads-body">
+                                Ads Scence
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <footer class="footer-container">
+            Footer
+        </footer>
+    </div>
+</body>
+
+</html>
