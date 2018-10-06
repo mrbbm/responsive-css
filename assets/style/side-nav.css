@@ -63,6 +63,16 @@
   color: #00aad2;
 }
 
+.panel-heading a:before {
+  font-family: "Glyphicons Halfings";
+  content: "&#xe113;";
+}
+
+.panel-heading a::after {
+  font-family: "Glyphicons Halfings";
+  content: "&#xe114;";
+}
+
 @media (max-width: 320px) {
   .content-sidebar {
     border-right: none;

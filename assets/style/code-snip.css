@@ -3,7 +3,8 @@
   background-color: #e1fbfd;
   /* box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14),
     0 1px 10px 0 rgba(0, 0, 0, 0.12); */
-  box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
+  box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+    0 1px 8px 0 rgba(0, 0, 0, 0.12);
   border: 1px solid #cccccc;
   padding: 10px;
   margin-bottom: 15px;
@@ -39,42 +40,6 @@ code {
   flex: 1 auto;
 }
 
-/* .code-toolbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-} */
-
-
-
-/* .bbminfo_codesnipIn p {
-  font-family: monospace;
-  background-color: #fff;
-  width: auto;
-  margin: 4em auto;
-  line-height: 0;
-  counter-reset: snippetLineCounter;
-}
-
-p code {
-  display: block;
-  white-space: pre-wrap
-}
-
-code:before {
-  counter-increment: snippetLineCounter;
-  content: counter(snippetLineCounter);
-  border-right: 1px solid #ddd;
-  padding: 0 .5em;
-  margin-right: .5em;
-  color: #888;
-}
-
-code:after {
-  display: block;
-  white-space: pre-wrap;
-} */
-
 .sinppet-header {
   font-size: 15px;
 }
@@ -97,8 +62,8 @@ code:after {
 
 .code-snip-line {
   list-style-position: inside;
-    text-indent: -3em;
-    padding-left: 5em;
+  text-indent: -3em;
+  padding-left: 5em;
 }
 
 .code-developer-icon {
@@ -116,34 +81,34 @@ code:after {
   display: inline-block;
   cursor: default;
   -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
 
 .code-snip-noline:before {
-  content: '';
-  padding: calc(0 .5em + 5px);
-  margin-right: .5em;
+  content: "";
+  padding: calc(0 0.5em + 5px);
+  margin-right: 0.5em;
   color: #fff;
   text-align: center;
   display: inline-block;
   cursor: default;
   -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
 
 @media (max-width: 575.98px) {
   .code-snip-line:before {
-    content: '';
+    content: "";
     border-right: 0px solid #ddd;
     padding: 0px;
     margin-right: 0px;
@@ -159,7 +124,7 @@ code:after {
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .code-snip-line:before {
-    content: '';
+    content: "";
     border-right: 0px solid #ddd;
     padding: 0px;
     margin-right: 0px;
@@ -175,7 +140,7 @@ code:after {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .code-snip-line:before {
-    content: '';
+    content: "";
     border-right: 0px solid #ddd;
     padding: 0px;
     margin-right: 0px;

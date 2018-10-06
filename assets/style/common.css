@@ -34,7 +34,8 @@ td {
   font-size: 13px;
 }
 
-p, pre {
+p,
+pre {
   margin: 0px;
   padding: 0px;
   text-align: justify;
@@ -52,6 +53,10 @@ ul {
 
 li ul {
   padding-top: 5px;
+}
+
+.navbar {
+  padding: 0 1rem;
 }
 
 .font20 {
@@ -88,7 +93,8 @@ li ul {
 }
 
 .bbm_bullets {
-  background: transparent url("../img//blue_arrow_right.png") no-repeat scroll 0 5px;
+  background: transparent url("../img//blue_arrow_right.png") no-repeat scroll 0
+    5px;
   margin: 0 0 10px;
   padding: 0 0 0 20px;
   line-height: 20px;

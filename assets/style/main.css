@@ -10,11 +10,12 @@
 }
 
 .container-adscontent {
-  width: 420px;
+  width: 455px;
   display: flex;
   flex-direction: column;
   height: auto;
   display: flex;
+  overflow: hidden;
 }
 
 .card-ads-body {
@@ -30,12 +31,22 @@
   word-wrap: break-word;
 }
 
-
+.card-ads-leaderboard {
+  width: 500px;
+  overflow: hidden;
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+}
 
 @media (max-width: 575.98px) {
   .container-adscontent {
     display: none;
     visibility: hidden;
+  }
+
+  .card-ads-leaderboard {
+    width: 320px;
   }
 }
 
@@ -44,11 +55,25 @@
     display: none;
     visibility: hidden;
   }
+
+  .card-ads-leaderboard {
+    width: 560px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .container-adscontent {
     display: none;
     visibility: hidden;
+  }
+
+  .card-ads-leaderboard {
+    width: 560px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .card-ads-leaderboard {
+    width: 800px;
   }
 }
