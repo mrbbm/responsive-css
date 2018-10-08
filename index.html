@@ -9,16 +9,16 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Mono:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 
     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./assets/scripts/jquery-3.3.1.min.js"></script>
 
     <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="./assets/scripts/popper.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="./assets/bootstrap/bootstrap.min.js"></script>
 
     <script src="./assets/scripts/bquery.js"></script>
     <link rel="stylesheet" href="./assets/style/template.css">
@@ -169,8 +169,12 @@
                                 <h3 class="sinppet-header">Simple Example - <span class="hlTitle">PHP</span> <code><span class="bbminfo_phpKeyword" title="The PHP mail() function is used to send an eMail from PHP Script">mail</span>(<span class="bbminfo_phpvarType">String</span> <span class="bbminfo_phpString" title="Specifies the To Address of an eMail"><var>$to</var></span>, <span class="bbminfo_phpvarType">String</span> <span class="bbminfo_phpString" title="Specifies the Subject of an eMail"><var>$subject</var></span>, <span class="bbminfo_phpvarType">String</span> <span class="bbminfo_phpString" title="Specifies the Body of an eMail"><var>$message</var></span>, <span class="bbminfo_phpvarType">String</span> <span class="bbminfo_phpString" title="Additional Header Information"><var>$header</var></span>);</code></h3>
                                 <div class="bbminfo_codesnip margin-bot25">
                                     <div class="flex-box">
-                                        <h4 class="flex-item">PHP Input Screen</h4> <i class="material-icons flex-item code-developer-icon"
-                                            title="Plain code" onclick="toggleSnipet('selectable1')">developer_mode</i>
+                                        <h4 class="flex-item">PHP Input Screen</h4>
+                                        <div class="code-developer-box show-only-high-dpi">
+                                            <span class="flex-item-right counter show-only-high-dpi" id="counter1"></span>
+                                            <img src="./assets/img/developer_mode.svg" width="20" alt="Plain text"
+                                                class="flex-item-right code-developer-icon show-only-high-dpi" id="toggle1"
+                                                title="Select plain source code" onclick="toggleSnipet('1')" /></div>
                                     </div>
                                     <div class="bbminfo_codesnipIn">
                                         <ol id="selectable1">

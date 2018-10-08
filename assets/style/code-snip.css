@@ -69,6 +69,15 @@ code {
 .code-developer-icon {
   text-align: right;
   cursor: pointer;
+  margin-left: auto;
+}
+
+.code-developer-box {
+  height: 20px;
+}
+
+.counter {
+  width: 100px;
 }
 
 .code-snip-line:before {
@@ -106,39 +115,7 @@ code {
                                   supported by Chrome and Opera */
 }
 
-@media (max-width: 575.98px) {
-  .code-snip-line:before {
-    content: "";
-    border-right: 0px solid #ddd;
-    padding: 0px;
-    margin-right: 0px;
-    color: #fff;
-  }
-
-  .code-snip-line {
-    list-style-position: inside;
-    text-indent: 0em;
-    padding-left: 0em;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .code-snip-line:before {
-    content: "";
-    border-right: 0px solid #ddd;
-    padding: 0px;
-    margin-right: 0px;
-    color: #fff;
-  }
-
-  .code-snip-line {
-    list-style-position: inside;
-    text-indent: 0em;
-    padding-left: 0em;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .code-snip-line:before {
     content: "";
     border-right: 0px solid #ddd;

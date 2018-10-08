@@ -145,3 +145,39 @@ li code {
 .flex-item {
   flex: 1;
 }
+
+.flex-box-right {
+  display: flex;
+  flex-grow: inherit;
+}
+
+.flex-item-right {
+  margin-left: auto;
+  order: 2;
+}
+
+.show-only-high-dpi {
+  display: flex;
+  visibility: visible;
+}
+
+@media screen and (max-width: 575.98px) {
+  .show-only-high-dpi {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  .show-only-high-dpi {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .show-only-high-dpi {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
